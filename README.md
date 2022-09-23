@@ -39,7 +39,7 @@ To carry out an SQL injection UNION attack, you need to ensure that your attack 
  2.Which columns returned from the original query are of a suitable data type to hold the results from the injected query?
  
 **There are two effective methods to determine how many columns are being returned from the original query.**
-**The first method** involves injecting a series of ORDER BY clauses and incrementing the specified column index until an error occurs.
+**The first method** involves injecting a series of** ORDER BY** clauses and incrementing the specified column index until an error occurs.
 
 ' ORDER BY 1--
 
