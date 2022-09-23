@@ -74,6 +74,22 @@ The application might actually return the **database error** in its HTTP respons
 
 ![image](https://user-images.githubusercontent.com/37367596/192009263-e2ee5bbc-e882-44d2-835a-b46c1b5ad3aa.png)
 
+**Listing the contents of the database:**
+
+Most database types (with the notable exception of Oracle) have a set of views called the information schema which provide information about the database.
+
+	SELECT * FROM information_schema.tables
+	
+**You can then query information_schema.columns to list the columns in individual tables**
+
+	SELECT * FROM information_schema.columns WHERE table_name = 'Users
+	
+	
+
+	
+
+
+
 
 
 
