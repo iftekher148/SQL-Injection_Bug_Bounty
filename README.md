@@ -1,3 +1,4 @@
+https://portswigger.net/web-security/sql-injection/cheat-sheet
 # SQL-Injection_Bug_Bounty
 ##All taken fron portswigger lab
 
