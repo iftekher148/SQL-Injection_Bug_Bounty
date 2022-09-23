@@ -1,6 +1,6 @@
 https://portswigger.net/web-security/sql-injection/cheat-sheet
 # SQL-Injection_Bug_Bounty
-##All taken fron portswigger lab
+#All taken fron portswigger lab
 
 The application doesn't implement any defenses against SQL injection attacks, so an attacker can construct an attack like:
 
